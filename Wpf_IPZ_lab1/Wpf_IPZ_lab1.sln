@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_IPZ_lab1", "Wpf_IPZ_lab1\Wpf_IPZ_lab1.csproj", "{6CEBF57E-C8F3-490D-B50F-7B3B0A6D34F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CEBF57E-C8F3-490D-B50F-7B3B0A6D34F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CEBF57E-C8F3-490D-B50F-7B3B0A6D34F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CEBF57E-C8F3-490D-B50F-7B3B0A6D34F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CEBF57E-C8F3-490D-B50F-7B3B0A6D34F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

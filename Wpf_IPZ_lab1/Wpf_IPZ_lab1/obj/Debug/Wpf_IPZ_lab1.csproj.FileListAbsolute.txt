@@ -1,0 +1,29 @@
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\bin\Debug\Wpf_IPZ_lab1.exe.config
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\bin\Debug\Wpf_IPZ_lab1.exe
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\bin\Debug\Wpf_IPZ_lab1.pdb
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Wpf_IPZ_lab1.csprojResolveAssemblyReference.cache
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\MainWindow.baml
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\MainWindow.g.cs
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\App.g.cs
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Wpf_IPZ_lab1_MarkupCompile.cache
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Wpf_IPZ_lab1.g.resources
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Wpf_IPZ_lab1.Properties.Resources.resources
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Wpf_IPZ_lab1.csproj.GenerateResource.Cache
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Wpf_IPZ_lab1.exe
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Wpf_IPZ_lab1.pdb
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Dictionary1.baml
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\App.baml
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Search.baml
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Search.g.cs
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Menu.baml
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Menu.g.cs
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\NewInfo.baml
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\NewInfo.g.cs
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Registration.baml
+C:\Users\Віктор\Documents\Visual Studio 2012\Projects\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Registration.g.cs
+C:\Users\Viktor Bliakhovskyi\Desktop\BUFF\IPZ_Part2\Бляховський\Проекти\Wpf_IPZ_lab1\Wpf_IPZ_lab1\bin\Debug\Wpf_IPZ_lab1.exe.config
+C:\Users\Viktor Bliakhovskyi\Desktop\BUFF\IPZ_Part2\Бляховський\Проекти\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Wpf_IPZ_lab1.exe
+C:\Users\Viktor Bliakhovskyi\Desktop\BUFF\IPZ_Part2\Бляховський\Проекти\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Wpf_IPZ_lab1.pdb
+C:\Users\Viktor Bliakhovskyi\OneDrive\Документи\Навчання\Магістр\DPPS kursak\IPZ_Part2\Бляховський\Проекти\Wpf_IPZ_lab1\Wpf_IPZ_lab1\bin\Debug\Wpf_IPZ_lab1.exe.config
+C:\Users\Viktor Bliakhovskyi\OneDrive\Документи\Навчання\Магістр\DPPS kursak\IPZ_Part2\Бляховський\Проекти\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Wpf_IPZ_lab1.exe
+C:\Users\Viktor Bliakhovskyi\OneDrive\Документи\Навчання\Магістр\DPPS kursak\IPZ_Part2\Бляховський\Проекти\Wpf_IPZ_lab1\Wpf_IPZ_lab1\obj\Debug\Wpf_IPZ_lab1.pdb

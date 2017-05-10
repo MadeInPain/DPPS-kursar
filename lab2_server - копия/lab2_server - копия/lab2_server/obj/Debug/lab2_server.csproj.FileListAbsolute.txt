@@ -1,0 +1,34 @@
+D:\ІПЗ\lab2_server\lab2_server\bin\Debug\lab2_server.exe.config
+D:\ІПЗ\lab2_server\lab2_server\bin\Debug\lab2_server.exe
+D:\ІПЗ\lab2_server\lab2_server\bin\Debug\lab2_server.pdb
+D:\ІПЗ\lab2_server\lab2_server\obj\Debug\lab2_server.csprojResolveAssemblyReference.cache
+D:\ІПЗ\lab2_server\lab2_server\obj\Debug\lab2_server.exe
+D:\ІПЗ\lab2_server\lab2_server\obj\Debug\lab2_server.pdb
+D:\ІПЗ\lab2_server\lab2_server\bin\Debug\Database1.mdf
+D:\ІПЗ\lab2_server\lab2_server\bin\Debug\Database1_log.ldf
+D:\ІПЗ\labs\lab_2\lab2_server\lab2_server\bin\Debug\lab2_server.exe.config
+D:\ІПЗ\labs\lab_2\lab2_server\lab2_server\obj\Debug\lab2_server.exe
+D:\ІПЗ\labs\lab_2\lab2_server\lab2_server\obj\Debug\lab2_server.pdb
+D:\IPZ\labs\lab_2\lab2_server\lab2_server\bin\Debug\lab2_server.exe.config
+D:\IPZ\labs\lab_2\lab2_server\lab2_server\obj\Debug\lab2_server.exe
+D:\IPZ\labs\lab_2\lab2_server\lab2_server\obj\Debug\lab2_server.pdb
+D:\IPZ\labs\lab_2\lab2_server\lab2_server\obj\Debug\lab2_server.csprojResolveAssemblyReference.cache
+D:\IPZ\labs\lab_2\lab2_server\lab2_server\bin\Debug\lab2_server.exe
+D:\IPZ\labs\lab_2\lab2_server\lab2_server\bin\Debug\lab2_server.pdb
+D:\IPZ\labs\lab_2\lab2_server\lab2_server\bin\Debug\Database1.mdf
+D:\IPZ\labs\lab_2\lab2_server\lab2_server\bin\Debug\Database1_log.ldf
+D:\IPZ\labs\lab_2\lab2_server - копия\lab2_server\bin\Debug\lab2_server.exe.config
+D:\IPZ\labs\lab_2\lab2_server - копия\lab2_server\obj\Debug\lab2_server.exe
+D:\IPZ\labs\lab_2\lab2_server - копия\lab2_server\obj\Debug\lab2_server.pdb
+D:\IPZ\labs\lab_2\lab2_server - копия\lab2_server\bin\Debug\Database1.mdf
+D:\IPZ\labs\lab_2\lab2_server - копия\lab2_server\bin\Debug\Database1_log.ldf
+D:\IPZ\labs\lab_2\lab2_server - копия\lab2_server\bin\Debug\lab2_server.exe
+D:\IPZ\labs\lab_2\lab2_server - копия\lab2_server\bin\Debug\lab2_server.pdb
+D:\IPZ\labs\lab_2\lab2_server - копия\lab2_server\obj\Debug\lab2_server.csprojResolveAssemblyReference.cache
+C:\Users\Віктор\Desktop\lab2_server - копия\lab2_server - копия\lab2_server\bin\Debug\lab2_server.exe.config
+C:\Users\Віктор\Desktop\lab2_server - копия\lab2_server - копия\lab2_server\obj\Debug\lab2_server.exe
+C:\Users\Віктор\Desktop\lab2_server - копия\lab2_server - копия\lab2_server\obj\Debug\lab2_server.pdb
+C:\Users\Віктор\Desktop\lab2_server - копия\lab2_server - копия\lab2_server\bin\Debug\Database1.mdf
+C:\Users\Віктор\Desktop\lab2_server - копия\lab2_server - копия\lab2_server\bin\Debug\Database1_log.ldf
+C:\Users\Віктор\Desktop\lab2_server - копия\lab2_server - копия\lab2_server\bin\Debug\lab2_server.exe
+C:\Users\Віктор\Desktop\lab2_server - копия\lab2_server - копия\lab2_server\bin\Debug\lab2_server.pdb

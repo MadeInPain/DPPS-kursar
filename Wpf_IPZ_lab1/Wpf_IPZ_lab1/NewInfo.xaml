@@ -1,0 +1,175 @@
+﻿<Window x:Class="Wpf_IPZ_lab1.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="NewInfo"
+        Width="600"
+        Height="450"
+        ResizeMode="NoResize">
+
+    <Grid x:Name="grid1"
+          Margin="0,0,0,0"
+          Cursor="Hand"
+          IsManipulationEnabled="True"
+          ToolTip="what are you waiting for!?">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="3.png" />
+        </Grid.Background>
+        <TextBox Name="Search"
+                 Grid.Row="0"
+                 Grid.Column="2"
+                 Grid.ColumnSpan="2"
+                 Width="200"
+                 Height="30"
+                 HorizontalAlignment="Stretch"
+                 VerticalAlignment="Stretch"
+                 FontFamily="calibri"
+                 FontSize="20"
+                 Style="{StaticResource BoxStyle}" />
+
+
+        <Label Grid.Row="0"
+               Grid.Column="1"
+               Grid.ColumnSpan="1"
+               Width="auto"
+               Height="auto"
+               Margin="0,0,0,0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Content="П І Б"
+               FontFamily="calibri"
+               FontSize="20"
+               Style="{StaticResource LabelStyle}" />
+        <Button x:Name="Save_Button"
+                Grid.Row="3"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Width="100"
+                Height="50"
+                Margin="0,0,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Stretch"
+                Click="Save_Button_Click_1"
+                Content="Ввід"
+                Style="{StaticResource ButtonStyle}" />
+        <Button x:Name="Back_Button"
+                Grid.Row="3"
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Width="100"
+                Height="50"
+                Margin="0,0,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Stretch"
+                Click="Back_Button_Click_1"
+                Content="Назад"
+                Style="{StaticResource ButtonStyle}" />
+        <TextBox Name="D_box"
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="2"
+                 Width="150"
+                 Height="30"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Stretch"
+                 FontFamily="calibri"
+                 FontSize="20"
+                 Margin="25"
+                 Style="{StaticResource BoxStyle}" 
+                 Text="{Binding ElementName=D_list,Mode=OneWay,Path=SelectedItem}"/>
+        
+        <ListBox Name="D_list"
+                 Grid.Row="2"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="2"
+                 Width="150"
+                 Height="60"
+                 Background="#FF1AFE80"
+                 FontFamily="Calibry"
+                 FontSize="15"
+                 Loaded="List_Loaded1">
+            <ListBox.OpacityMask>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0" Color="Black" />
+                    <GradientStop Offset="1" Color="#FF1AFE80" />
+                </LinearGradientBrush>
+            </ListBox.OpacityMask>
+
+
+        </ListBox>
+
+        <TextBox x:Name="Ozinka"
+                 Grid.Row="1"
+                 Grid.Column="3"
+                 Grid.ColumnSpan="2"
+                 Width="50"
+                 Height="30"
+                 Margin="0,0,0,0"
+                 HorizontalAlignment="Right"
+                 VerticalAlignment="Stretch"
+                 Style="{StaticResource BoxStyle}" />
+
+        <Label Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               Width="auto"
+               Height="auto"
+               Margin="0,0,70,0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Content="Дисципліна"
+               FontFamily="calibri"
+               FontSize="20"
+               Style="{StaticResource LabelStyle}" />
+        <Label Grid.Row="1"
+               Grid.Column="3"
+               Grid.ColumnSpan="2"
+               Width="auto"
+               Height="auto"
+               Margin="0,0,70,0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Content="Оцінка"
+               FontFamily="calibri"
+               FontSize="20"
+               Style="{StaticResource LabelStyle}" />
+        <Button Name="Plus"
+                Grid.Row="1"
+                Grid.Column="5"
+                Width="40"
+                Height="20"
+                Margin="5,30"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="Plus_Click_1"
+                Content="+"
+                Style="{StaticResource ButtonStylePL}" />
+        <Button Name="Minus"
+                Grid.Row="1"
+                Grid.Column="5"
+                Width="40"
+                Height="20"
+                Margin="5,30"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Click="Minus_Click_1"
+                Content="-"
+                Style="{StaticResource ButtonStylePL}" />
+        
+        </Grid>
+</Window>
