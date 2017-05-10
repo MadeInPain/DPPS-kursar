@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLActivityDiagramServerSearch">
+  <activityRootModelMoniker Id="d8bb7ed0-deba-4137-ac3b-1271eefc2583" />
+  <nestedChildShapes>
+    <initialNodeShape Id="b54f250a-e768-4c2a-90c3-497bbdb167b0" absoluteBounds="5.25, 0.75, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="9f95f53f-b386-4a5b-bad6-779c4f2bf8fe" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <activityFinalNodeShape Id="2a139f46-74b7-42e6-aa6c-d9ad29eeed2f" absoluteBounds="5.25, 4, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="8a980450-66d0-40eb-a4ef-2fcfb99851fb" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <actionShape Id="e5e203f0-4bd7-4f80-be03-a9457baa1e77" absoluteBounds="4.75, 1.875, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="46298704-f41f-40fa-8055-b14b7c3aa58c" LastKnownName="Відображення інформації" />
+    </actionShape>
+    <actionShape Id="ffbc1137-89d9-4474-8f96-e70a3a80daf8" absoluteBounds="4.75, 2.5, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="80933450-02c2-47c3-bdee-9db5a3cbaee2" LastKnownName="Пошук інформації" />
+    </actionShape>
+    <actionShape Id="90e2abbc-0470-4794-8e73-4925ded32ede" absoluteBounds="4.75, 3.125, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="baeac20a-58fd-4bdf-81a6-d043b2e42b10" LastKnownName="Надсилання інформації" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(5.3125 : 2.25); (5.3125 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="91dbcb1f-6a7e-4fc3-a588-dff92e7e8e8a" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="e5e203f0-4bd7-4f80-be03-a9457baa1e77" />
+        <actionShapeMoniker Id="ffbc1137-89d9-4474-8f96-e70a3a80daf8" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5.3125 : 2.875); (5.3125 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="0b5554c1-d10e-4d61-a88c-f214de9ae4ac" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="ffbc1137-89d9-4474-8f96-e70a3a80daf8" />
+        <actionShapeMoniker Id="90e2abbc-0470-4794-8e73-4925ded32ede" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5.3125 : 3.5); (5.3125 : 4)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="efa58795-ff92-4999-8de4-8c24fa933f43" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="90e2abbc-0470-4794-8e73-4925ded32ede" />
+        <activityFinalNodeShapeMoniker Id="2a139f46-74b7-42e6-aa6c-d9ad29eeed2f" />
+      </nodes>
+    </controlFlowConnector>
+    <acceptEventActionShape Id="78f0bdf3-1259-4ea6-93a5-7f3bad7f5d07" absoluteBounds="4.75, 1.25, 1.125, 0.375" customColor="185, 212, 238">
+      <acceptEventActionMoniker Id="139bad1a-f84c-41c6-858e-2f208701537d" LastKnownName="Отримання запиту" />
+    </acceptEventActionShape>
+    <controlFlowConnector edgePoints="[(5.3125 : 0.875); (5.3125 : 1.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="f4375233-a55c-4b49-b979-d22608a44eec" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="b54f250a-e768-4c2a-90c3-497bbdb167b0" />
+        <acceptEventActionShapeMoniker Id="78f0bdf3-1259-4ea6-93a5-7f3bad7f5d07" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5.3125 : 1.625); (5.3125 : 1.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="184d61d3-4bae-4426-8575-3a327e51c5fa" />
+      <relativeChildShapes />
+      <nodes>
+        <acceptEventActionShapeMoniker Id="78f0bdf3-1259-4ea6-93a5-7f3bad7f5d07" />
+        <actionShapeMoniker Id="e5e203f0-4bd7-4f80-be03-a9457baa1e77" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

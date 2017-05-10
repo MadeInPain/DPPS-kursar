@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="fc495f80-3d1a-4acc-8c45-513d575b6c8e" name="ActivityServerList" linkedPackageId="b6ac7e24-4279-438f-a71c-f3e4b38243ac" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="420a5c19-7a5c-4ec8-a556-9e9e30294d8d" name="ActivityServerList" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="1bb5ed99-8363-4b05-a84e-9c0ac5b45aa3" />
+        <nodes>
+          <initialNode Id="2b4cbe0a-33bc-4218-9c9f-014de1e6cca5" name="Initial1" isLeaf="false">
+            <elementDefinition Id="29f0ebc4-8a72-4775-8658-bbdf7a7425e0" />
+            <flowNodeTargets>
+              <controlFlow Id="d5ffcf81-27a2-4a7a-8179-1ddb325ec303" isLeaf="false">
+                <acceptEventActionMoniker Id="89bcbef4-5126-4c8d-80e4-64c5a31fa1c1" LastKnownName="Отримання запиту" />
+                <elementDefinition Id="7ff0a9c5-b719-4897-9850-952715ece5fe" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="c40045ca-75e1-49bf-baf7-ce33b0ef9daa" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="4cce8c52-3a63-4a27-85c4-094b6bdc35fd" />
+          </activityFinalNode>
+          <acceptEventAction Id="89bcbef4-5126-4c8d-80e4-64c5a31fa1c1" name="Отримання запиту" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="59ecc562-14d8-4820-8c3d-aaf131bb90d5" />
+            <flowNodeTargets>
+              <controlFlow Id="1a65659b-383d-429b-8319-4233624e63ce" isLeaf="false">
+                <opaqueActionMoniker Id="9af5f0d2-d1c1-4596-ac85-0f810f7d704a" LastKnownName="Читання інформації " />
+                <elementDefinition Id="aaa5160c-5d9a-4c3e-98bf-aee711f47fc5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <opaqueAction Id="9af5f0d2-d1c1-4596-ac85-0f810f7d704a" name="Читання інформації " isLeaf="false">
+            <elementDefinition Id="1e1b47ed-4f4a-4031-88cc-55791ddd399d" />
+            <flowNodeTargets>
+              <controlFlow Id="ce53328b-0539-4227-89b8-d9ea863e4254" isLeaf="false">
+                <opaqueActionMoniker Id="3631a4c1-b453-4a3e-823f-a60dacf5498f" LastKnownName="Надсилання інформації" />
+                <elementDefinition Id="b114c63b-c8c5-4652-a3eb-4ec70a32d2ad" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3631a4c1-b453-4a3e-823f-a60dacf5498f" name="Надсилання інформації" isLeaf="false">
+            <elementDefinition Id="8bacfe81-b16c-422b-8e5e-1d49b4b75172" />
+            <flowNodeTargets>
+              <controlFlow Id="0a1b8e38-18e6-435f-93a5-e83350b953cb" isLeaf="false">
+                <activityFinalNodeMoniker Id="c40045ca-75e1-49bf-baf7-ce33b0ef9daa" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="ab6ac586-1ca3-4541-9d6f-2a56d8b3477c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="b6ac7e24-4279-438f-a71c-f3e4b38243ac" name="ModelingProject1">
+    <elementDefinition Id="67074758-13fc-4f76-a98e-ee94e5ca22a6" />
+  </package>
+</activityRootModel>

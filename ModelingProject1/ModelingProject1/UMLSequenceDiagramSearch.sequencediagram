@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="890f7325-df45-456d-ae28-0410210a4eef" name="SequenceSearch" linkedPackageId="a058f90f-672e-4fa7-9216-1cba3201559f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="10c3bfd6-38e9-477b-9fbb-a0dff3024502" name="SequenceSearch" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="9f8d018d-e67e-4d39-9b77-309456cbecbc" />
+        <fragments>
+          <behaviorExecutionSpecification Id="76bd6ffd-6c09-4e75-af66-341bda792c33" name="BehaviorExecutionSpecification2">
+            <elementDefinition Id="184ee838-1f11-4b04-918c-af5fda580321" />
+            <coveredLifelines>
+              <lifelineMoniker Id="b2c1bc77-2eac-4c13-9a0f-015461daff75" LastKnownName="Екран" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="d31a4742-8edf-4c9e-b425-ed746f7826c2" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="99d17b04-8386-4f65-805d-aff4f535e0ae" LastKnownName="ExecutionOccurrenceSpecification3" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="951422dd-6bb5-4207-a122-b7519472d173" LastKnownName="MessageOccurrenceSpecification4" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="99d17b04-8386-4f65-805d-aff4f535e0ae" name="ExecutionOccurrenceSpecification3">
+            <elementDefinition Id="4245f929-f109-4688-96e6-dbb316cdeabe" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="953ee9e3-9c2c-4865-a516-9baa71ad89b0" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="b2c1bc77-2eac-4c13-9a0f-015461daff75" LastKnownName="Екран" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="70475534-1081-47a2-9b77-77f7f4ad37b0" name="MessageOccurrenceSpecification3">
+            <elementDefinition Id="5dc35ba2-e697-483b-ad60-125e7a6288e0" />
+            <covered>
+              <lifelineMoniker Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" LastKnownName="Термінал" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="951422dd-6bb5-4207-a122-b7519472d173" name="MessageOccurrenceSpecification4">
+            <elementDefinition Id="4c6f6b39-8579-43a0-a78c-3602c9aa3724" />
+            <covered>
+              <lifelineMoniker Id="b2c1bc77-2eac-4c13-9a0f-015461daff75" LastKnownName="Екран" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="d31a4742-8edf-4c9e-b425-ed746f7826c2" name="ExecutionOccurrenceSpecification4">
+            <elementDefinition Id="65c7cdfb-8b5b-432a-8f12-44372e6eb5a5" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="fe0b5f02-6169-47f2-90d2-a981daed3375" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="b2c1bc77-2eac-4c13-9a0f-015461daff75" LastKnownName="Екран" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="c7436d3a-c507-431d-a1cf-99c884357945" name="BehaviorExecutionSpecification1">
+            <elementDefinition Id="fd195282-8a00-4ae3-81c7-e68546825495" />
+            <coveredLifelines>
+              <lifelineMoniker Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" LastKnownName="Термінал" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="c850c94d-11a1-48ff-bd3b-03cc3e3a4582" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="c432959f-bf46-49d3-ad59-62d42422f683" LastKnownName="ExecutionOccurrenceSpecification1" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="fd520cc6-5ad2-4250-9adf-c84e5fb31074" LastKnownName="MessageOccurrenceSpecification2" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="c432959f-bf46-49d3-ad59-62d42422f683" name="ExecutionOccurrenceSpecification1">
+            <elementDefinition Id="7d29d560-48eb-4bb0-b6a5-e074eb385bfe" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d47d0f13-a8a4-4b20-bd7f-4ec325a39581" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" LastKnownName="Термінал" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="fd520cc6-5ad2-4250-9adf-c84e5fb31074" name="MessageOccurrenceSpecification2">
+            <elementDefinition Id="3270e226-ba5f-420b-8d8b-b102797ef770" />
+            <covered>
+              <lifelineMoniker Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" LastKnownName="Термінал" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="267af379-77a7-4607-9a77-c4ce765ee7ef" name="MessageOccurrenceSpecification1">
+            <elementDefinition Id="4e2514a5-1e35-4400-8d3a-73392824bffe" />
+            <covered>
+              <lifelineMoniker Id="a0d14bda-8e9f-464e-9a87-96a25fab7762" LastKnownName="Користувач" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="c850c94d-11a1-48ff-bd3b-03cc3e3a4582" name="ExecutionOccurrenceSpecification2">
+            <elementDefinition Id="2b3625a0-f0c4-4ee3-8515-acb282c0347b" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="c32cad60-620a-4454-bc25-85b6a615e359" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" LastKnownName="Термінал" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="ac7be8ed-c2a7-4a1d-aca8-9a72a3f971dc" name="BehaviorExecutionSpecification3">
+            <elementDefinition Id="5621ddee-6be9-4b2f-8186-5ff1b3914ebd" />
+            <coveredLifelines>
+              <lifelineMoniker Id="7084b4dd-d12b-49e1-b87a-4db96cf32a8e" LastKnownName="Сервер" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="3cc9f0c4-3537-4683-9a4d-466ee4093fef" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="7ab30148-4cd7-49ed-a80b-73c70b908ec0" LastKnownName="ExecutionOccurrenceSpecification5" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="422ab42f-effb-464f-9af1-a84261953df2" LastKnownName="MessageOccurrenceSpecification6" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="7ab30148-4cd7-49ed-a80b-73c70b908ec0" name="ExecutionOccurrenceSpecification5">
+            <elementDefinition Id="805cb218-9439-450c-9d8b-d0f8849eaebe" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="00406057-29db-4581-a0e5-e1540fcd25cd" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7084b4dd-d12b-49e1-b87a-4db96cf32a8e" LastKnownName="Сервер" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="422ab42f-effb-464f-9af1-a84261953df2" name="MessageOccurrenceSpecification6">
+            <elementDefinition Id="5b6c626a-fc3c-42f4-bc32-69eed476a705" />
+            <covered>
+              <lifelineMoniker Id="7084b4dd-d12b-49e1-b87a-4db96cf32a8e" LastKnownName="Сервер" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="622b5395-7b8e-4acf-ad86-2ea61658b5a7" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="116d92c3-cfe3-45a7-a761-7b76f33df1ac" />
+            <covered>
+              <lifelineMoniker Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" LastKnownName="Термінал" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="3cc9f0c4-3537-4683-9a4d-466ee4093fef" name="ExecutionOccurrenceSpecification6">
+            <elementDefinition Id="28f2e17b-cab6-478c-a67b-eacd5cb868a2" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="999fbe8e-6963-497b-9bfb-c8e89752ec56" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7084b4dd-d12b-49e1-b87a-4db96cf32a8e" LastKnownName="Сервер" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="ce626589-027d-4d40-8cf7-e0370265b1cf" name="BehaviorExecutionSpecification4">
+            <elementDefinition Id="078cbc91-9c52-41b0-9006-5382c0be740a" />
+            <coveredLifelines>
+              <lifelineMoniker Id="7a4b1a0c-79f8-4229-85d8-4c9436be5b90" LastKnownName="База даних" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="d29f5728-404e-4bd2-8ce9-50f40d2cb730" LastKnownName="ExecutionOccurrenceSpecification8" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="a666acdf-4fb7-4a7a-ab09-a0d29f1d73da" LastKnownName="ExecutionOccurrenceSpecification7" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="fc34bd75-0e2b-42b8-a199-89f46f238b52" LastKnownName="MessageOccurrenceSpecification8" />
+              <messageOccurrenceSpecificationMoniker Id="7643b75a-b56a-433a-8354-160cc52a81b3" LastKnownName="MessageOccurrenceSpecification9" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="a666acdf-4fb7-4a7a-ab09-a0d29f1d73da" name="ExecutionOccurrenceSpecification7">
+            <elementDefinition Id="2cdfa29a-9bc9-4601-a20e-030d4129c379" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="06417bc1-d9b3-439f-bb5c-87bb4f8b437d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7a4b1a0c-79f8-4229-85d8-4c9436be5b90" LastKnownName="База даних" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c8eb2442-cf75-4a03-ab59-8bfb8e13c041" name="MessageOccurrenceSpecification7">
+            <elementDefinition Id="3c27b11f-bcc3-45e4-9772-ca4f25882d0d" />
+            <covered>
+              <lifelineMoniker Id="7084b4dd-d12b-49e1-b87a-4db96cf32a8e" LastKnownName="Сервер" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="fc34bd75-0e2b-42b8-a199-89f46f238b52" name="MessageOccurrenceSpecification8">
+            <elementDefinition Id="5561e3c6-ecf3-4dbf-a81e-903a26074462" />
+            <covered>
+              <lifelineMoniker Id="7a4b1a0c-79f8-4229-85d8-4c9436be5b90" LastKnownName="База даних" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7643b75a-b56a-433a-8354-160cc52a81b3" name="MessageOccurrenceSpecification9">
+            <elementDefinition Id="639d0f44-ef33-4776-909d-84d99387ce2a" />
+            <covered>
+              <lifelineMoniker Id="7a4b1a0c-79f8-4229-85d8-4c9436be5b90" LastKnownName="База даних" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="632621cc-c8d2-4f5c-973d-71a8ebe3f7cb" name="MessageOccurrenceSpecification10">
+            <elementDefinition Id="1ebed747-3a8c-4355-8f42-f112374fdc7e" />
+            <covered>
+              <lifelineMoniker Id="7084b4dd-d12b-49e1-b87a-4db96cf32a8e" LastKnownName="Сервер" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="d29f5728-404e-4bd2-8ce9-50f40d2cb730" name="ExecutionOccurrenceSpecification8">
+            <elementDefinition Id="4a8999a4-fcff-44fd-a29b-2dc117ef1af9" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="fec99775-87bd-4d9a-b994-c3181af3d440" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7a4b1a0c-79f8-4229-85d8-4c9436be5b90" LastKnownName="База даних" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="9d5f4e21-bf83-40af-b4ee-ba03d6087a9d" name="BehaviorExecutionSpecification5">
+            <elementDefinition Id="9f1d071b-1677-479c-bcb5-7f3e98a6841a" />
+            <coveredLifelines>
+              <lifelineMoniker Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" LastKnownName="Термінал" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="59f6ad93-71d4-40c8-aee8-607ad10f4164" LastKnownName="ExecutionOccurrenceSpecification10" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="112469b2-71a5-48aa-b206-cf8892bd596c" LastKnownName="ExecutionOccurrenceSpecification9" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="d1e0e295-fc25-4bc8-8323-46e753d86402" LastKnownName="MessageOccurrenceSpecification12" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="112469b2-71a5-48aa-b206-cf8892bd596c" name="ExecutionOccurrenceSpecification9">
+            <elementDefinition Id="7aa06892-091c-4614-8361-043df22d6135" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="4eeca664-7169-4905-bf46-ffb5fe4a9d9b" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" LastKnownName="Термінал" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="08fa328c-6abb-41d3-a7ff-4884e11e9005" name="MessageOccurrenceSpecification11">
+            <elementDefinition Id="0c91029e-9aec-494f-961c-6a26e88b6eb3" />
+            <covered>
+              <lifelineMoniker Id="7084b4dd-d12b-49e1-b87a-4db96cf32a8e" LastKnownName="Сервер" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d1e0e295-fc25-4bc8-8323-46e753d86402" name="MessageOccurrenceSpecification12">
+            <elementDefinition Id="bf60f03a-98dd-49d3-a969-62c26e92a779" />
+            <covered>
+              <lifelineMoniker Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" LastKnownName="Термінал" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="59f6ad93-71d4-40c8-aee8-607ad10f4164" name="ExecutionOccurrenceSpecification10">
+            <elementDefinition Id="4d330a12-05cc-4f0a-a46a-1c853e91d23c" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="f8b8dca2-a319-4a75-8653-971726b15483" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" LastKnownName="Термінал" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="34457813-9869-4e89-8b1a-6c0d69b1bb1f" name="BehaviorExecutionSpecification7">
+            <elementDefinition Id="024051ec-4b6c-49d0-8ac4-a3dac065ef76" />
+            <coveredLifelines>
+              <lifelineMoniker Id="b2c1bc77-2eac-4c13-9a0f-015461daff75" LastKnownName="Екран" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="e0f5e0a5-757b-4d23-bdfe-fe74bc93b25b" LastKnownName="ExecutionOccurrenceSpecification14" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="f5779c75-2fcc-4f2f-aa8c-e99a8baaf277" LastKnownName="ExecutionOccurrenceSpecification13" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="0d09a585-47cb-4947-a7b8-37129b85747a" LastKnownName="MessageOccurrenceSpecification16" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="f5779c75-2fcc-4f2f-aa8c-e99a8baaf277" name="ExecutionOccurrenceSpecification13">
+            <elementDefinition Id="1d08809b-eb5e-47f4-9f41-7cd7b8bcb221" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5b4cc621-7753-4a77-b4fa-71d2e914e826" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="b2c1bc77-2eac-4c13-9a0f-015461daff75" LastKnownName="Екран" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b14c0153-144b-462f-b453-1b267b75c4ec" name="MessageOccurrenceSpecification15">
+            <elementDefinition Id="69ce5b03-fcfe-423f-8609-178b4a895ecc" />
+            <covered>
+              <lifelineMoniker Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" LastKnownName="Термінал" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0d09a585-47cb-4947-a7b8-37129b85747a" name="MessageOccurrenceSpecification16">
+            <elementDefinition Id="9784e40e-73d6-49e3-a80d-eb1b92df3d69" />
+            <covered>
+              <lifelineMoniker Id="b2c1bc77-2eac-4c13-9a0f-015461daff75" LastKnownName="Екран" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="e0f5e0a5-757b-4d23-bdfe-fe74bc93b25b" name="ExecutionOccurrenceSpecification14">
+            <elementDefinition Id="95f81f2b-e852-4264-be68-3cdbe04350c0" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="21887951-0111-4ab2-ba04-c60f122007a8" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="b2c1bc77-2eac-4c13-9a0f-015461daff75" LastKnownName="Екран" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="a0d14bda-8e9f-464e-9a87-96a25fab7762" name="Користувач" isActor="true" lifelineDisplayName="Користувач">
+            <elementDefinition Id="5a4e23b7-fd5f-4d6d-ac13-71bd32845000" />
+            <represents>
+              <propertyMoniker Id="08ae146a-4342-4750-94b3-7674dc2bb0c0" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="267af379-77a7-4607-9a77-c4ce765ee7ef" LastKnownName="MessageOccurrenceSpecification1" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="b2c1bc77-2eac-4c13-9a0f-015461daff75" name="Екран" isActor="false" lifelineDisplayName="Екран">
+            <elementDefinition Id="53b634ca-4de0-4c18-9ce5-211ab9703bca" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="99d17b04-8386-4f65-805d-aff4f535e0ae" LastKnownName="ExecutionOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="d31a4742-8edf-4c9e-b425-ed746f7826c2" LastKnownName="ExecutionOccurrenceSpecification4" />
+              <executionOccurrenceSpecificationMoniker Id="f5779c75-2fcc-4f2f-aa8c-e99a8baaf277" LastKnownName="ExecutionOccurrenceSpecification13" />
+              <executionOccurrenceSpecificationMoniker Id="e0f5e0a5-757b-4d23-bdfe-fe74bc93b25b" LastKnownName="ExecutionOccurrenceSpecification14" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="6048df2f-f0d5-4c3b-af4f-38628dfbf181" name="Термінал" isActor="false" lifelineDisplayName="Термінал">
+            <elementDefinition Id="54f05b9d-d080-4642-8c76-665fe69ed18c" />
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="70475534-1081-47a2-9b77-77f7f4ad37b0" LastKnownName="MessageOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="c432959f-bf46-49d3-ad59-62d42422f683" LastKnownName="ExecutionOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="c850c94d-11a1-48ff-bd3b-03cc3e3a4582" LastKnownName="ExecutionOccurrenceSpecification2" />
+              <messageOccurrenceSpecificationMoniker Id="622b5395-7b8e-4acf-ad86-2ea61658b5a7" LastKnownName="MessageOccurrenceSpecification5" />
+              <executionOccurrenceSpecificationMoniker Id="112469b2-71a5-48aa-b206-cf8892bd596c" LastKnownName="ExecutionOccurrenceSpecification9" />
+              <executionOccurrenceSpecificationMoniker Id="59f6ad93-71d4-40c8-aee8-607ad10f4164" LastKnownName="ExecutionOccurrenceSpecification10" />
+              <messageOccurrenceSpecificationMoniker Id="b14c0153-144b-462f-b453-1b267b75c4ec" LastKnownName="MessageOccurrenceSpecification15" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="7084b4dd-d12b-49e1-b87a-4db96cf32a8e" name="Сервер" isActor="true" lifelineDisplayName="Сервер">
+            <elementDefinition Id="c84906c1-8b0e-4847-ba1d-27141a3ab42e" />
+            <represents>
+              <propertyMoniker Id="fd348372-e827-4bcb-a26a-edaacfe524ec" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="7ab30148-4cd7-49ed-a80b-73c70b908ec0" LastKnownName="ExecutionOccurrenceSpecification5" />
+              <executionOccurrenceSpecificationMoniker Id="3cc9f0c4-3537-4683-9a4d-466ee4093fef" LastKnownName="ExecutionOccurrenceSpecification6" />
+              <messageOccurrenceSpecificationMoniker Id="c8eb2442-cf75-4a03-ab59-8bfb8e13c041" LastKnownName="MessageOccurrenceSpecification7" />
+              <messageOccurrenceSpecificationMoniker Id="632621cc-c8d2-4f5c-973d-71a8ebe3f7cb" LastKnownName="MessageOccurrenceSpecification10" />
+              <messageOccurrenceSpecificationMoniker Id="08fa328c-6abb-41d3-a7ff-4884e11e9005" LastKnownName="MessageOccurrenceSpecification11" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="7a4b1a0c-79f8-4229-85d8-4c9436be5b90" name="База даних" isActor="true" lifelineDisplayName="База даних">
+            <elementDefinition Id="14e18ee8-5bc1-491c-b723-d8c6599ccab6" />
+            <represents>
+              <propertyMoniker Id="5e8fe625-da59-490e-a328-9c327d4d79e3" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="a666acdf-4fb7-4a7a-ab09-a0d29f1d73da" LastKnownName="ExecutionOccurrenceSpecification7" />
+              <executionOccurrenceSpecificationMoniker Id="d29f5728-404e-4bd2-8ce9-50f40d2cb730" LastKnownName="ExecutionOccurrenceSpecification8" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="f43bf004-e398-41d2-ba2c-ea82e5c7dcb2" name="Виведення меню" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="b0d2b40b-5c72-4b32-a503-54cc38c9b714" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="70475534-1081-47a2-9b77-77f7f4ad37b0" LastKnownName="MessageOccurrenceSpecification3" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="951422dd-6bb5-4207-a122-b7519472d173" LastKnownName="MessageOccurrenceSpecification4" />
+            </receiveEvent>
+          </message>
+          <message Id="9e4a70d9-189d-4fe6-b06e-2a66c231a746" name="Запит пошуку" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="0b804bfe-4ebd-4a70-9636-d34e26eb6a0f" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="267af379-77a7-4607-9a77-c4ce765ee7ef" LastKnownName="MessageOccurrenceSpecification1" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="fd520cc6-5ad2-4250-9adf-c84e5fb31074" LastKnownName="MessageOccurrenceSpecification2" />
+            </receiveEvent>
+          </message>
+          <message Id="7bbed828-e2e7-4499-9d42-ad85722cec05" name="Надсилання запиту" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="5344dd0d-9290-4d65-8bf7-5b458a4eb43b" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="622b5395-7b8e-4acf-ad86-2ea61658b5a7" LastKnownName="MessageOccurrenceSpecification5" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="422ab42f-effb-464f-9af1-a84261953df2" LastKnownName="MessageOccurrenceSpecification6" />
+            </receiveEvent>
+          </message>
+          <message Id="277b0de9-19f2-4b0c-8428-75a0356fcf37" name="Звірення з БД" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="aec42703-82c1-49be-ad95-3d13aafae4ad" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="c8eb2442-cf75-4a03-ab59-8bfb8e13c041" LastKnownName="MessageOccurrenceSpecification7" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="fc34bd75-0e2b-42b8-a199-89f46f238b52" LastKnownName="MessageOccurrenceSpecification8" />
+            </receiveEvent>
+          </message>
+          <message Id="8d919ddd-9ec3-429c-9842-c5dc87b23e36" name="Відповідь" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="46d4de40-514a-41cb-b625-93d22b2330eb" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="7643b75a-b56a-433a-8354-160cc52a81b3" LastKnownName="MessageOccurrenceSpecification9" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="632621cc-c8d2-4f5c-973d-71a8ebe3f7cb" LastKnownName="MessageOccurrenceSpecification10" />
+            </receiveEvent>
+          </message>
+          <message Id="16a08a69-d2d7-4ca4-b468-d416abef6eb9" name="Надсилання даних" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="bc8d58c8-1194-4b55-ad1c-d67ee69de339" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="08fa328c-6abb-41d3-a7ff-4884e11e9005" LastKnownName="MessageOccurrenceSpecification11" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="d1e0e295-fc25-4bc8-8323-46e753d86402" LastKnownName="MessageOccurrenceSpecification12" />
+            </receiveEvent>
+          </message>
+          <message Id="32aac0ef-bb09-4cb8-a4b1-3ba3e59f1690" name="Відображення результату" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="bcd12838-106e-48f7-b28a-8261a599fcd8" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="b14c0153-144b-462f-b453-1b267b75c4ec" LastKnownName="MessageOccurrenceSpecification15" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="0d09a585-47cb-4947-a7b8-37129b85747a" LastKnownName="MessageOccurrenceSpecification16" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property Id="08ae146a-4342-4750-94b3-7674dc2bb0c0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fe759fa4-4c9a-4598-a8b5-474a68dcd1c3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2c433743-57f5-4619-8cb8-15ba3c7f67a0" LastKnownName="Користувач" />
+            </type_NamedElement>
+          </property>
+          <property Id="fd348372-e827-4bcb-a26a-edaacfe524ec" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5bb94a8d-a71e-4a78-8aa3-15c99c201d92" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6dd3bcb3-a0a5-436e-9778-20148842e511" LastKnownName="Сервер" />
+            </type_NamedElement>
+          </property>
+          <property Id="5e8fe625-da59-490e-a328-9c327d4d79e3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2d1b5de0-d826-4c65-8846-c063f9e1e77e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d0b7a81e-1b9d-4bc1-9165-8366a71c7bac" LastKnownName="База даних" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d47d0f13-a8a4-4b20-bd7f-4ec325a39581" name="ExecutionEvent">
+        <elementDefinition Id="5a53b738-106b-4c80-9aa7-09c9c15cf26a" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="c32cad60-620a-4454-bc25-85b6a615e359" name="ExecutionEvent">
+        <elementDefinition Id="97e863b0-5215-4039-ae88-e24c145f2440" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2c433743-57f5-4619-8cb8-15ba3c7f67a0" name="Користувач" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Користувач">
+        <elementDefinition Id="454e932c-e714-4d09-b195-a7f783e6612d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6dd3bcb3-a0a5-436e-9778-20148842e511" name="Сервер" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Сервер">
+        <elementDefinition Id="358a9950-92e2-4a08-9211-18d1bd5020f6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d0b7a81e-1b9d-4bc1-9165-8366a71c7bac" name="База даних" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::База даних">
+        <elementDefinition Id="203f3be5-9de5-4772-bbe1-b54ab04e58c4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="953ee9e3-9c2c-4865-a516-9baa71ad89b0" name="ExecutionEvent">
+        <elementDefinition Id="1f5df501-278e-4729-8c06-f7cecb010816" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="fe0b5f02-6169-47f2-90d2-a981daed3375" name="ExecutionEvent">
+        <elementDefinition Id="5b91167b-c70f-4b55-a977-0abbb12441c0" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="00406057-29db-4581-a0e5-e1540fcd25cd" name="ExecutionEvent">
+        <elementDefinition Id="146b58a0-cc12-46e3-af40-48cb409f759c" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="999fbe8e-6963-497b-9bfb-c8e89752ec56" name="ExecutionEvent">
+        <elementDefinition Id="e998d18a-07e0-4ed7-805f-16e718815aae" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="06417bc1-d9b3-439f-bb5c-87bb4f8b437d" name="ExecutionEvent">
+        <elementDefinition Id="2353c96c-8b83-4de6-b049-5529b76db229" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="fec99775-87bd-4d9a-b994-c3181af3d440" name="ExecutionEvent">
+        <elementDefinition Id="46a7b7e4-8fdf-46a6-a18f-5a2f126ddf04" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="4eeca664-7169-4905-bf46-ffb5fe4a9d9b" name="ExecutionEvent">
+        <elementDefinition Id="e3e1fd2b-dffd-4def-97d3-03e3f34ac2bb" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="f8b8dca2-a319-4a75-8653-971726b15483" name="ExecutionEvent">
+        <elementDefinition Id="684621fb-a673-40a9-be7e-bf44f91b1531" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5b4cc621-7753-4a77-b4fa-71d2e914e826" name="ExecutionEvent">
+        <elementDefinition Id="ba454db3-2436-4601-9731-9f92aba3d8e5" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="21887951-0111-4ab2-ba04-c60f122007a8" name="ExecutionEvent">
+        <elementDefinition Id="e5551774-0f90-4dc5-92f4-d04cb62d81ed" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="a058f90f-672e-4fa7-9216-1cba3201559f" name="ModelingProject1">
+    <elementDefinition Id="67074758-13fc-4f76-a98e-ee94e5ca22a6" />
+  </package>
+</SequenceDesignerModel>

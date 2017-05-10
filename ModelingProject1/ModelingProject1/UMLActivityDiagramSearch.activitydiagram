@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="15b579b2-1101-4664-970e-7f5a8ca41660" name="ActivitySearch" linkedPackageId="9ef5b9a4-f31f-4557-b67c-589ef3fcd843" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="736a3e64-9a8c-4ee4-a9c8-8fb260a93668">
+      <elementDefinition Id="99c32c47-01d8-46de-94c3-979aa1700854" />
+      <body>Знайдені співпадіння</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="8d069b4d-d09b-44c3-b961-c7c9ed7f9624" name="ActivitySearch" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="10c0e906-432e-4c3f-9f6b-dbada52bd257" />
+        <nodes>
+          <initialNode Id="8dd96032-c576-4d73-b764-846c1ef5b3c4" name="Initial1" isLeaf="false">
+            <elementDefinition Id="2a9c31b8-bf76-4c65-867c-386493772d28" />
+            <flowNodeTargets>
+              <controlFlow Id="02ee11e1-a404-477f-b7cf-7b484bcf43f0" isLeaf="false">
+                <acceptEventActionMoniker Id="4e540cd6-34c8-4470-9fae-ec4f792a234a" LastKnownName="Введення даних" />
+                <elementDefinition Id="6f20f47a-8b4b-4e4c-8137-be6ddbf10220" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <acceptEventAction Id="4e540cd6-34c8-4470-9fae-ec4f792a234a" name="Введення даних" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="841371b8-b873-4dc4-ad7e-2cff8ffd92e6" />
+            <flowNodeTargets>
+              <controlFlow Id="c1fd9e1b-5b29-4209-b29f-36ab7ef40108" isLeaf="false">
+                <sendSignalActionMoniker Id="1597de2d-ccb9-4ce8-bd71-ce4ab897dce9" LastKnownName="Надсилання даних" />
+                <elementDefinition Id="d14f5025-9ed4-4c57-9aab-ee3a3cd1b1aa" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <sendSignalAction Id="1597de2d-ccb9-4ce8-bd71-ce4ab897dce9" name="Надсилання даних" isLeaf="false">
+            <elementDefinition Id="bcac773c-967f-421a-b686-57e6ef1eb9d5" />
+            <flowNodeTargets>
+              <controlFlow Id="e66f47b2-f33a-42e2-9650-394bc36213d9" isLeaf="false">
+                <decisionNodeMoniker Id="458b3aff-e78b-497d-bb0c-ea58ae609590" LastKnownName="Decision1" />
+                <elementDefinition Id="e09afc49-adb9-4d11-a44e-6f64ff703668" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <decisionNode Id="458b3aff-e78b-497d-bb0c-ea58ae609590" name="Decision1" isLeaf="false">
+            <elementDefinition Id="b891b0b9-ce24-477f-8ef6-d3693dc9ea02" />
+            <flowNodeTargets>
+              <controlFlow Id="91c705e4-18ed-461a-a3bd-b09f08ecc94f" guard="Так" isLeaf="false">
+                <acceptEventActionMoniker Id="26977d4c-5a4d-4876-95e9-200077b53f03" LastKnownName="Отримати дані" />
+                <elementDefinition Id="f0240cb2-ab7e-4de0-b17d-928cc91926f1" />
+              </controlFlow>
+              <controlFlow Id="54be54cd-69c7-4a48-98c7-ad4029568fe0" guard="Ні" isLeaf="false">
+                <opaqueActionMoniker Id="2168b6bf-d443-4cd4-a3f4-46abe31ac4b2" LastKnownName="Немає співпадінь" />
+                <elementDefinition Id="a7463071-d814-404a-ae78-d96af6980554" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <acceptEventAction Id="26977d4c-5a4d-4876-95e9-200077b53f03" name="Отримати дані" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="04b14654-41c7-45a2-9719-f5a2bf50b80a" />
+            <flowNodeTargets>
+              <controlFlow Id="0d00690b-f76f-474c-afeb-fce52dd83395" isLeaf="false">
+                <opaqueActionMoniker Id="2c39f2e4-b261-4bbf-8956-369803a77c1f" LastKnownName="Показати результат" />
+                <elementDefinition Id="ed66f192-d78e-4bb3-a617-6687102a0848" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <opaqueAction Id="2168b6bf-d443-4cd4-a3f4-46abe31ac4b2" name="Немає співпадінь" isLeaf="false">
+            <elementDefinition Id="a9ddc957-1722-4131-b3a1-e9b425efb359" />
+            <flowNodeTargets>
+              <controlFlow Id="b63a9be9-71d6-408f-9308-e3f0d682380a" isLeaf="false">
+                <activityFinalNodeMoniker Id="09dd68cb-8499-45c3-a54e-9b98185e3c81" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="a49302e2-50a5-4476-8c87-acdaa46715bd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2c39f2e4-b261-4bbf-8956-369803a77c1f" name="Показати результат" isLeaf="false">
+            <elementDefinition Id="99d82217-429b-4c23-b95d-619dd5bff462" />
+            <flowNodeTargets>
+              <controlFlow Id="ccc63530-20c7-4ac0-ac4d-4242943d0ffa" isLeaf="false">
+                <activityFinalNodeMoniker Id="09dd68cb-8499-45c3-a54e-9b98185e3c81" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="c3ee06ce-d0a0-4c1d-b234-d33c8d994b43" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="09dd68cb-8499-45c3-a54e-9b98185e3c81" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="1d8606d8-9f95-43fc-823c-b0dc2eec598e" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="9ef5b9a4-f31f-4557-b67c-589ef3fcd843" name="ModelingProject1">
+    <elementDefinition Id="67074758-13fc-4f76-a98e-ee94e5ca22a6" />
+  </package>
+</activityRootModel>

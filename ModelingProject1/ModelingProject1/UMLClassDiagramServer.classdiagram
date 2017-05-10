@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="bbe334c2-c7fd-4480-b36f-c9bc668ad132" name="UMLClassDiagramServer" linkedPackageId="09a98978-c25e-4467-bf60-b1052bf6c96f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a5a32c33-bad5-48f0-8c28-dbf8bbfe1d45" name="Сервер" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c5691d6a-2324-4829-a332-3e9b435703d7" />
+        <targetEnds>
+          <association Id="a43f2ef2-9188-4592-98d9-4d79eb6816dc" isDerived="false" sourceEndRoleName="Сервер" targetEndRoleName="Комунікація" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f8d95424-0a48-4b89-965e-c222d3dfbd05" LastKnownName="Комунікація" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d0aaec55-8836-4d76-8d06-12762e94bdc8" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="14af43e6-3851-4008-afd6-7ee07bc5098e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8e51aaf5-96a0-48c2-907e-812ed94953ff" name="Комунікація" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9b9a367a-cd3d-4275-bcd5-ae6cb4be6e00" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d2235712-128a-4d62-b237-2fcde17a3b10" />
+          </association>
+          <association Id="3ece82e8-9e46-409f-b640-e3a2051cfe4f" isDerived="false" sourceEndRoleName="Сервер" targetEndRoleName="БД" isLeaf="false" isAbstract="false">
+            <classMoniker Id="80ca6e3a-e637-4099-9b89-0df825518495" LastKnownName="БД" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16f8f35e-4e60-4c61-9646-a4257e9500ae" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a0d766bb-065c-4004-ace8-a2f4a635c723" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="293cfdfe-9718-4727-a26c-6951941e7c07" name="БД" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fd8ccab0-91dd-4128-931f-96a9abfeb8f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1f028235-de73-46d5-af49-506437822d39" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="fd0195c9-0cb0-4b40-b0a1-4f0aba098285" name="Видалення" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9d3ae1b2-cec5-428c-bfb9-9a4a8fa5b3b8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f07e0356-8282-466b-ba73-d7f919b169a7" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="b5482c6b-cf3a-48dc-a18b-e9399cb2a8d1" name="Збереження" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1274bef6-b252-4a0e-843c-b5bec76cb6a8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f07e0356-8282-466b-ba73-d7f919b169a7" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="8e97d457-6b95-411c-a515-6282aab8b4d9" name="Редагування" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ee4d89c1-aafc-4c36-bcef-f4c40d240e39" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f07e0356-8282-466b-ba73-d7f919b169a7" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="83b489af-7120-40f5-b73b-90bd75d24db7" name="Зчитування" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="afd3db31-7d05-404d-906a-14a3244d2519" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f07e0356-8282-466b-ba73-d7f919b169a7" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="04f89ba0-e112-4cff-b41d-d27283b15a91" name="Видалення даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="526267f4-4e3c-4c16-9a99-3753e455e9b7" />
+          </operation>
+          <operation Id="41596c99-e9cf-49de-86c6-3568da2b94cc" name="Збереження даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1aad427e-173c-4c13-9739-e9b8c9e68ac1" />
+          </operation>
+          <operation Id="9da8db3a-c0a7-447b-89b1-0ae4dd8d926c" name="Зчитування даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a98a439f-eee8-46c4-bf98-9fcd47279910" />
+          </operation>
+          <operation Id="194f2021-52b4-4245-aa5e-10fae207f67c" name="Присвоєння статусу" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5fa9b4d5-8d2a-4dc0-85bf-a0d2a9831ab0" />
+          </operation>
+          <operation Id="9af6fdf6-6466-4ae7-8c42-1be676ee2f92" name="Редагування даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6425b556-8f90-4566-99e1-a1186e41246c" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="80ca6e3a-e637-4099-9b89-0df825518495" name="БД" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6283ba93-c243-4d4b-8da8-1bee047b59f1" />
+        <targetEnds>
+          <association Id="615b79b1-923a-41c8-955e-ec54bc112253" isDerived="false" sourceEndRoleName="БД" targetEndRoleName="Сервер" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a5a32c33-bad5-48f0-8c28-dbf8bbfe1d45" LastKnownName="Сервер" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b3ffda0c-2287-4b74-b1f2-fd1f5caa5695" name="БД" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b17a8f2c-0df4-4638-8f37-f90d7ec59803" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d840df21-2b59-435f-b2aa-65d707e7ea1a" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fa338309-7b67-4d10-8a4f-79007c5cda10" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0fd4f393-3ad5-4ca8-b476-31c828c2578a" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e2e8b25f-f28d-4b4a-b0be-b7fa0939f27e" name="Операція" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b16f45ce-3499-489e-b90c-b06d0b73a616" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f07e0356-8282-466b-ba73-d7f919b169a7" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="af8e9a07-0f9c-49dc-8249-3ab70c6fb5c8" name="Видалення даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b5f4358a-4fdf-4a90-a6c1-d632db80a0c7" />
+          </operation>
+          <operation Id="64f31ae0-64ba-4e79-8591-f62e8a86b7d2" name="Збереження даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2a81b172-d048-421c-ae4e-d46d5b3d5198" />
+          </operation>
+          <operation Id="208d57b7-a129-43cb-97d8-a4db9ef8d418" name="Зчитування даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9faf4fc3-0c20-44ab-8b71-5b4ec0b59608" />
+          </operation>
+          <operation Id="aee9481a-daab-41d0-8c5b-1856ee0b42b2" name="Редагування даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7a66e572-2014-46b9-bde6-62674fc25daf" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="57a13fd7-df90-46ba-976d-fcf7fae05aa8" name="byte[]" isAbstract="false" isLeaf="false" cachedFullName="byte[]">
+        <elementDefinition Id="055f6daa-f98b-4b2f-9d79-432b02a1de88" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8d95424-0a48-4b89-965e-c222d3dfbd05" name="Комунікація" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2dc7f318-1b87-4b8d-ae8a-7be593b2a39b" />
+        <targetEnds>
+          <association Id="fb48ec60-8327-4fe2-a9b2-2a729986b81b" isDerived="false" sourceEndRoleName="Комунікація" targetEndRoleName="Сервер" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a5a32c33-bad5-48f0-8c28-dbf8bbfe1d45" LastKnownName="Сервер" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="035e371c-85c3-405f-ad2c-ae59ea5bced6" name="Комунікація" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="df33f7f9-e7b8-49d4-9086-a0c673d64780" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a9298e7e-2d63-44f0-9a52-6f9bb7538c5a" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="205237d7-1734-4db0-82d8-a279b3c7ab55" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3b01d45d-b617-433e-b765-a87b0e704a4e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a08a5cd7-ae33-476b-8f51-d5120b6baf01" name="Вихідний буфер" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e3f630b2-9c28-410d-8550-6b343bdb899a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="57a13fd7-df90-46ba-976d-fcf7fae05aa8" LastKnownName="byte[]" />
+            </type_NamedElement>
+          </property>
+          <property Id="d199bbc1-280d-4dab-a159-5cc0d1d52add" name="Вхідний буфер" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c3c1edb8-2628-4f6b-8ba4-e2d307509bde" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="57a13fd7-df90-46ba-976d-fcf7fae05aa8" LastKnownName="byte[]" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="39ad9816-32a3-4dc5-ae39-97725d9e1de8" name="Надіслати дані" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a4fed2c6-3471-4274-a243-43ee56efe713" />
+          </operation>
+          <operation Id="503674e0-20cf-416e-8329-88b41d327675" name="Отримати дані" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bc1b948f-66b8-491a-b3ff-6db0d9077019" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f07e0356-8282-466b-ba73-d7f919b169a7" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="09a98978-c25e-4467-bf60-b1052bf6c96f" name="ModelingProject1">
+    <elementDefinition Id="67074758-13fc-4f76-a98e-ee94e5ca22a6" />
+  </package>
+</logicalClassDesignerModel>

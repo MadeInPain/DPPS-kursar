@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="440968d5-dcd8-4c68-b23c-1eba4cbfe4c2" name="ActivityServerRegactivitydiagram" linkedPackageId="5d2bdb60-3c89-4b0c-b4c6-e693e5ccb61f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="725829dd-af6b-468e-b9cc-1ca607b93d42" name="ActivityServerRegactivitydiagram" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="80fab666-94d6-4105-9a07-8b68c9f30fea" />
+        <nodes>
+          <initialNode Id="7cb19223-44f1-4c54-8c5d-9bdd5ecdd8ab" name="Initial1" isLeaf="false">
+            <elementDefinition Id="212caf6f-8891-46c9-8c39-cc9b23ff3347" />
+            <flowNodeTargets>
+              <controlFlow Id="53c24847-dbca-405b-8b67-9f5d5868b792" isLeaf="false">
+                <opaqueActionMoniker Id="baf0dcc8-4338-44df-9a9e-7bcd0679df1a" LastKnownName="Отримання запиту" />
+                <elementDefinition Id="ad2cacdf-d731-4968-84e5-35eb014e81f1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="2a662a7d-d0e1-4dcc-8328-c66e65b295b9" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="922342e3-0531-4ec4-b38c-d155c7069881" />
+          </activityFinalNode>
+          <opaqueAction Id="baf0dcc8-4338-44df-9a9e-7bcd0679df1a" name="Отримання запиту" isLeaf="false">
+            <elementDefinition Id="654c98a3-29ca-4248-9f82-955be8b2f051" />
+            <flowNodeTargets>
+              <controlFlow Id="57780b78-bfa2-46a5-9478-fa4806a65583" isLeaf="false">
+                <sendSignalActionMoniker Id="32b12f09-ae30-40a8-8837-e49e5a05a258" LastKnownName="Введення даних" />
+                <elementDefinition Id="16368d54-7456-45bb-931c-24b846dab8a0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction Id="32b12f09-ae30-40a8-8837-e49e5a05a258" name="Введення даних" isLeaf="false">
+            <elementDefinition Id="5e7b7bdc-653c-4059-9644-e9296826de13" />
+            <flowNodeTargets>
+              <controlFlow Id="0002cbe6-3583-49f3-bf72-665736300b71" isLeaf="false">
+                <opaqueActionMoniker Id="560ad0d0-1bd1-4e1b-8640-29509a195f10" LastKnownName="Відправка запиту" />
+                <elementDefinition Id="2c4dae49-b08a-4d18-b820-918bc58aad9e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <opaqueAction Id="560ad0d0-1bd1-4e1b-8640-29509a195f10" name="Відправка запиту" isLeaf="false">
+            <elementDefinition Id="c8df0f3f-a6a6-4d7e-a997-9f004afee4ea" />
+            <flowNodeTargets>
+              <controlFlow Id="f7eee40d-7b95-4059-9017-d9b705d10b25" isLeaf="false">
+                <opaqueActionMoniker Id="80d6bc7a-79d6-4e05-9736-ab106cd925d9" LastKnownName="Підтвердження реєестрації" />
+                <elementDefinition Id="df3d8125-545f-4c49-b9ee-d72790cf410f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="80d6bc7a-79d6-4e05-9736-ab106cd925d9" name="Підтвердження реєестрації" isLeaf="false">
+            <elementDefinition Id="ca9c8276-3221-4483-a634-8ab729e57931" />
+            <flowNodeTargets>
+              <controlFlow Id="6d82bd3a-90d8-49a1-afc8-c29b07e816bd" isLeaf="false">
+                <activityFinalNodeMoniker Id="2a662a7d-d0e1-4dcc-8328-c66e65b295b9" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="3a95b790-0ba1-462b-99ed-46b5885c7c21" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="5d2bdb60-3c89-4b0c-b4c6-e693e5ccb61f" name="ModelingProject1">
+    <elementDefinition Id="67074758-13fc-4f76-a98e-ee94e5ca22a6" />
+  </package>
+</activityRootModel>

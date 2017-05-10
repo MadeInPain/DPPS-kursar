@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="410ed32b-c575-45ff-9190-d2ff1bc1e41e" name="UMLUseCaseDiagramServer" linkedPackageId="95b061b3-74fc-43d8-bd3c-4e23cdea33f4" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="8d7c9e4a-f67c-4feb-a786-935448293a40">
+      <profileInstance Id="8bf977cc-6d87-4238-9b77-365ef290eb8a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="34e1e051-0763-45cb-8ec5-4371d0fccc3a">
+      <profileInstance Id="0e448f3a-275e-4950-9b79-56a152e044b0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="f90dcf6a-0071-4b55-b156-777437b6ffa9" name="Сервер" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16f30826-7325-435e-a903-578bafa126c7" />
+        <targetEnds>
+          <association Id="34a3eb59-f468-4ff9-9941-91a3dabe9367" isDerived="false" sourceEndRoleName="Сервер" targetEndRoleName="Опрацювання команди" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5c6a0cbb-0069-4ccf-ab52-de79cd12f003" LastKnownName="Опрацювання команди" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c455fdb6-41ad-4938-b9c2-eeef8c2e3bd5" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="73f01ee6-df8c-46e9-91cf-78a277f68383" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7214c0b3-379c-4095-a27c-6aa1e3f11e38" name="Опрацювання команди" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ada690c4-c925-4d5d-b2df-255ea0bc8bd3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9166f358-1476-40d0-9835-4d507806e7f4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7564c135-7023-4571-9d44-0ff096d1e80f" name="База даних" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="203f3be5-9de5-4772-bbe1-b54ab04e58c4" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5c6a0cbb-0069-4ccf-ab52-de79cd12f003" name="Опрацювання команди" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14c0e0a8-2d59-44f4-9a98-4edcced4d3a0" />
+        <targetEnds>
+          <association Id="8d3a1ca3-4cec-425a-9610-421978a6dc6f" isDerived="false" sourceEndRoleName="Опрацювання команди" targetEndRoleName="База даних" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="7564c135-7023-4571-9d44-0ff096d1e80f" LastKnownName="База даних" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ee0c286e-4ed4-4706-9b39-6c95078ae1ec" name="Опрацювання команди" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0f54d1d0-5d4c-47a0-ae81-14590d0dd99a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d65fa8f2-a53b-47e2-93a4-b1b318a4168b" name="База даних" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a370b7a1-a24a-4541-ad2c-5f16c62e8908" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7a70cd0f-a84a-416b-87ce-5dab85caf734" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1c005846-140a-4633-9f03-015837b8b4ec" name="Авторизація" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8dec1713-7140-483b-9c8c-fd3246121a6f" />
+        <generalsInternal>
+          <generalization Id="ebd07cff-4794-450c-87ea-e485daca9218" isSubstitutable="false">
+            <useCaseMoniker Id="5c6a0cbb-0069-4ccf-ab52-de79cd12f003" LastKnownName="Опрацювання команди" />
+            <elementDefinition Id="22b7b286-f9cd-4e24-a71f-728deb41a36d" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f0449a65-1c75-4efb-8530-6e201e567a55" name="Реєстрація" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f2d84fee-ead8-41f2-8dcc-b763ebfc4036" />
+        <generalsInternal>
+          <generalization Id="cbea573a-29b2-468e-88e0-d4228dd0fcd7" isSubstitutable="false">
+            <useCaseMoniker Id="5c6a0cbb-0069-4ccf-ab52-de79cd12f003" LastKnownName="Опрацювання команди" />
+            <elementDefinition Id="42d14df7-446b-41cf-9528-9631e6e18b92" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fa01ce12-82f0-4bfe-82f3-540c7c3166b9" name="Переглянути список" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="75d69a09-92ba-4f10-afda-ab130008acdb" />
+        <generalsInternal>
+          <generalization Id="7688e00e-c67b-45c9-bec1-04f59a727153" isSubstitutable="false">
+            <useCaseMoniker Id="5c6a0cbb-0069-4ccf-ab52-de79cd12f003" LastKnownName="Опрацювання команди" />
+            <elementDefinition Id="5b37dc32-196c-47aa-8dca-e200c15f4838" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d245759c-ed0f-46d8-9c4e-f999e21f155c" name="Пошук" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47aea2d8-3a1d-4c4e-ac1d-b4a301e7c779" />
+        <generalsInternal>
+          <generalization Id="e10af3de-c727-4784-bb24-614be444b4d9" isSubstitutable="false">
+            <useCaseMoniker Id="5c6a0cbb-0069-4ccf-ab52-de79cd12f003" LastKnownName="Опрацювання команди" />
+            <elementDefinition Id="fdf548e5-cf5a-4068-82b0-7878c8bc1505" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b4234dfa-c03b-4999-a4cc-20386f4f04c6" name="ПІБ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4759feb2-93dd-4ea7-8423-f2355ddeae51" />
+        <suppliersInternal>
+          <dependency Id="46ac0c45-2bb7-4525-9b86-8d19c57d472f">
+            <useCaseMoniker Id="d245759c-ed0f-46d8-9c4e-f999e21f155c" LastKnownName="Пошук" />
+            <elementDefinition Id="98b7f6b5-2370-440f-a8df-97571ee8fe1f" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="95b061b3-74fc-43d8-bd3c-4e23cdea33f4" name="ModelingProject1">
+    <elementDefinition Id="67074758-13fc-4f76-a98e-ee94e5ca22a6" />
+  </package>
+</useCaseModelRoot>

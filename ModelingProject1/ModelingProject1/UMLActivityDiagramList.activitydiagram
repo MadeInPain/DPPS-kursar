@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="6dae0c37-a2f6-4f1c-acb1-1db547a00d97" name="ActivityList" linkedPackageId="d41eb843-5741-44d6-bc8e-8faeeb49b7b3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="743e201b-4f21-4626-bf10-3b611158e678">
+      <elementDefinition Id="6fad71e4-285c-4c57-a070-317e52669d6c" />
+      <body>Кнопка "Список"</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="e65fa35d-278a-4ff2-8fe6-2db2f9f0e5d4" LastKnownName="Вибір пункту у меню" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="1122fa82-5703-4fc6-96c5-006e1a1daf5d" name="ActivityList" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="f965b338-2719-4edf-8d9f-d5ca225f101f" />
+        <nodes>
+          <initialNode Id="95e93355-05ae-412c-98b0-8535a7924349" name="Initial1" isLeaf="false">
+            <elementDefinition Id="a519d47f-08dd-46f9-a5b0-eb97cb3defcc" />
+            <flowNodeTargets>
+              <controlFlow Id="e4cdd23e-9d38-4091-94bd-f5c0796f367f" isLeaf="false">
+                <acceptEventActionMoniker Id="b683e8aa-dc2d-4c24-9e02-d998c16a9ca9" LastKnownName="Відображення форми" />
+                <elementDefinition Id="43f67f46-4cd5-43dc-87ac-90e37a445bba" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="ce94fbbb-c798-4472-ad29-38813a667f8b" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="715ca596-9897-4c5d-b225-39b2e0c96463" />
+          </activityFinalNode>
+          <acceptEventAction Id="b683e8aa-dc2d-4c24-9e02-d998c16a9ca9" name="Відображення форми" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="94f8b316-b711-42b6-ae25-ea2e0dd162b8" />
+            <flowNodeTargets>
+              <controlFlow Id="f2ba5b4e-ebdd-4f36-8c7f-a092fd885d9b" isLeaf="false">
+                <opaqueActionMoniker Id="e65fa35d-278a-4ff2-8fe6-2db2f9f0e5d4" LastKnownName="Вибір пункту у меню" />
+                <elementDefinition Id="c6789a83-146d-4581-af99-c1a4ed0d5f98" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <opaqueAction Id="e65fa35d-278a-4ff2-8fe6-2db2f9f0e5d4" name="Вибір пункту у меню" isLeaf="false">
+            <elementDefinition Id="15e29858-0d74-441c-849e-abf716324d2e" />
+            <flowNodeTargets>
+              <controlFlow Id="373a8364-a70b-4d05-90fe-6847840020b2" isLeaf="false">
+                <sendSignalActionMoniker Id="a80e178e-9261-40a4-94d3-4ee30f7084ac" LastKnownName="Надсилання запиту" />
+                <elementDefinition Id="e9111d0c-fad8-451d-af65-1bbc5643c1ef" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction Id="a80e178e-9261-40a4-94d3-4ee30f7084ac" name="Надсилання запиту" isLeaf="false">
+            <elementDefinition Id="3e69ae94-3f30-4577-86c0-697ddff02df8" />
+            <flowNodeTargets>
+              <controlFlow Id="1173f345-046f-4108-bf58-fd51792b4839" isLeaf="false">
+                <acceptEventActionMoniker Id="caf6971c-0856-40d1-8601-4cca8b32b3f9" LastKnownName="Отримання списку" />
+                <elementDefinition Id="47f7ad96-7ab7-4363-b544-97e6dee21221" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <acceptEventAction Id="caf6971c-0856-40d1-8601-4cca8b32b3f9" name="Отримання списку" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="8849047b-b927-4908-9f3a-1bd40b0f101d" />
+            <flowNodeTargets>
+              <controlFlow Id="71baead2-e219-4adf-8717-e977315cdf79" isLeaf="false">
+                <activityFinalNodeMoniker Id="ce94fbbb-c798-4472-ad29-38813a667f8b" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="59ac3c0e-ace6-4279-a452-9dae371fb304" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="d41eb843-5741-44d6-bc8e-8faeeb49b7b3" name="ModelingProject1">
+    <elementDefinition Id="67074758-13fc-4f76-a98e-ee94e5ca22a6" />
+  </package>
+</activityRootModel>

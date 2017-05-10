@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="d37e28af-3cfc-43ce-b5db-973fbe1e28bd" name="ActivityServerAutorize" linkedPackageId="15f3e7e7-b1b3-4c34-8608-b012e9dc3a07" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="b4f45c62-8fa7-49fb-95fc-446dcb0c56d2" name="ActivityServerAutorize" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="f5f30b04-43ce-48a6-b28c-5f7dd9061034" />
+        <nodes>
+          <initialNode Id="6d13af8a-741e-45f5-a77a-f3dcf813c9a2" name="Initial1" isLeaf="false">
+            <elementDefinition Id="22c475cc-9a95-4b4d-9e00-65e6442be951" />
+            <flowNodeTargets>
+              <controlFlow Id="5ff8b52f-da0c-4e63-b3c9-b88499148e2f" isLeaf="false">
+                <opaqueActionMoniker Id="acf577ca-0afd-4941-888c-2b520299ba70" LastKnownName="Отримання запиту авторизації" />
+                <elementDefinition Id="4609499c-a27b-4402-b77f-402a28d477a7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="468a1d30-ff77-4057-bec6-9d1507ded2d6" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="da671476-ea54-4e01-855b-b7be2e0ec035" />
+          </activityFinalNode>
+          <opaqueAction Id="acf577ca-0afd-4941-888c-2b520299ba70" name="Отримання запиту авторизації" isLeaf="false">
+            <elementDefinition Id="ff0e0c5b-719c-4591-afed-3c72e5abbaea" />
+            <flowNodeTargets>
+              <controlFlow Id="44ab0b85-6d81-4762-b5bf-17f3b0b9153e" isLeaf="false">
+                <opaqueActionMoniker Id="191f6395-6af2-4af4-a3ea-a556b4e1dd1b" LastKnownName="Збереження параметрв авторизації у БД " />
+                <elementDefinition Id="a632cb17-b3c2-431c-ad10-9f35ae5b50de" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="191f6395-6af2-4af4-a3ea-a556b4e1dd1b" name="Збереження параметрв авторизації у БД " isLeaf="false">
+            <elementDefinition Id="db9b6ebc-2872-4e3a-948a-8ed6cce3ba05" />
+            <flowNodeTargets>
+              <controlFlow Id="a22b4708-fd8c-4fa8-a20c-025edb7c06a2" isLeaf="false">
+                <acceptEventActionMoniker Id="843d4095-384b-4460-8f43-00b2f6d390fd" LastKnownName="Відправка статуса користувачу" />
+                <elementDefinition Id="a86181f8-f4b8-4423-9ec2-7b0c67546b5d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <acceptEventAction Id="843d4095-384b-4460-8f43-00b2f6d390fd" name="Відправка статуса користувачу" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="2f2e1dc9-215a-446c-ac7c-27be452ac5ee" />
+            <flowNodeTargets>
+              <controlFlow Id="7b01d5d8-8a72-4512-9001-80137afda1e9" isLeaf="false">
+                <activityFinalNodeMoniker Id="468a1d30-ff77-4057-bec6-9d1507ded2d6" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="10ed73ea-3da7-4434-9bea-5ee3f6872ef0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="15f3e7e7-b1b3-4c34-8608-b012e9dc3a07" name="ModelingProject1">
+    <elementDefinition Id="67074758-13fc-4f76-a98e-ee94e5ca22a6" />
+  </package>
+</activityRootModel>

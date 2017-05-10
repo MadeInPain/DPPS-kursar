@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="096dec1e-f5bd-4f80-8989-7bf8d416b70b" name="ActivityAutorize" linkedPackageId="b54d6ad2-7ad1-4ecd-a3e7-a17a3b5a8989" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="6c1c11c6-5f7b-46a9-b485-9bdc3573b1b7" name="ActivityAutorize" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="bff39fc2-d10c-41d5-beef-b0f5cbc0ea09" />
+        <nodes>
+          <initialNode Id="8ebc9f4a-9f76-4c66-b9fe-3db6937a2592" name="Initial1" isLeaf="false">
+            <elementDefinition Id="e9423f49-8e33-4196-8899-e73119d0560f" />
+            <flowNodeTargets>
+              <controlFlow Id="97bfcd7d-595d-4374-be57-f05d536e8f50" isLeaf="false">
+                <acceptEventActionMoniker Id="674d4014-2eee-460f-ba90-c34ce0a967d6" LastKnownName="Введення логіна" />
+                <elementDefinition Id="f435e2a8-1d98-40e9-8a3c-4c7d2772aa2d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <acceptEventAction Id="674d4014-2eee-460f-ba90-c34ce0a967d6" name="Введення логіна" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="55c8668a-92fc-4701-bd9a-dba04ad48534" />
+            <flowNodeTargets>
+              <controlFlow Id="53b15286-2c03-4a20-8058-7220e21e1213" isLeaf="false">
+                <acceptEventActionMoniker Id="ea4df8db-73d5-4f86-adeb-f4082311fe8d" LastKnownName="Введення пароля" />
+                <elementDefinition Id="e360b362-d727-40f0-95ef-97f9b0bb1446" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <acceptEventAction Id="ea4df8db-73d5-4f86-adeb-f4082311fe8d" name="Введення пароля" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="d4dad3b1-3e35-4ded-a39f-8e61ae6b7b68" />
+            <flowNodeTargets>
+              <controlFlow Id="fca748fe-9da3-4283-88e3-8c6e10c51240" isLeaf="false">
+                <sendSignalActionMoniker Id="9ecda0ea-6f7c-4eda-bb10-80134d1b27a1" LastKnownName="Надсилання даних" />
+                <elementDefinition Id="12b95d7a-976f-48ff-99c8-0bde0cf551f4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <sendSignalAction Id="9ecda0ea-6f7c-4eda-bb10-80134d1b27a1" name="Надсилання даних" isLeaf="false">
+            <elementDefinition Id="53d2ba81-5529-4575-a7d4-bbc760d6a837" />
+            <flowNodeTargets>
+              <controlFlow Id="ec564a99-a8e9-422b-98e3-c6675c093fab" isLeaf="false">
+                <decisionNodeMoniker Id="9dd37964-a968-4d0c-9b31-d87fd72d484e" LastKnownName="Decision1" />
+                <elementDefinition Id="759a7408-edaf-448d-9b14-2af63ac4dd61" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <decisionNode Id="9dd37964-a968-4d0c-9b31-d87fd72d484e" name="Decision1" isLeaf="false">
+            <elementDefinition Id="ac7fb740-9fca-4407-b9d2-4f1f26fcb020" />
+            <flowNodeTargets>
+              <controlFlow Id="640f0a6a-f301-4685-86ac-efc5cc850238" guard="Перевірка логіна і пароля" isLeaf="false">
+                <acceptEventActionMoniker Id="fb0ae88a-b580-47b9-aed7-d01e0c249e93" LastKnownName="Неправильний логін чи пароль" />
+                <elementDefinition Id="09c8c6d2-c25f-472e-ac1e-b8b83124ff8f" />
+              </controlFlow>
+              <controlFlow Id="c9c396bf-4b0e-4d35-9d4c-12df96ec45e8" guard="Якщо логін і пароль знайдені" isLeaf="false">
+                <opaqueActionMoniker Id="134fcc37-a5b7-4f65-92a0-7e5345e449f6" LastKnownName="Виконати авторизацю" />
+                <elementDefinition Id="fe1a649c-5403-412b-aa23-63db85e893a8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <acceptEventAction Id="fb0ae88a-b580-47b9-aed7-d01e0c249e93" name="Неправильний логін чи пароль" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="e699150f-e815-457b-97bc-a3ca28804431" />
+            <flowNodeTargets>
+              <controlFlow Id="2ae2bcae-d4f2-4af5-a2a0-f22e4013f0b6" guard="Якщо пароль і логін не знайдені" isLeaf="false">
+                <acceptEventActionMoniker Id="674d4014-2eee-460f-ba90-c34ce0a967d6" LastKnownName="Введення логіна" />
+                <elementDefinition Id="91cd9a17-4dcf-442f-bb21-656700a5c97f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <opaqueAction Id="134fcc37-a5b7-4f65-92a0-7e5345e449f6" name="Виконати авторизацю" isLeaf="false">
+            <elementDefinition Id="bc37e13e-fa2b-4c76-b050-ea00281324cb" />
+            <flowNodeTargets>
+              <controlFlow Id="02e3a70f-9011-4d26-915e-34f418835ae8" isLeaf="false">
+                <activityFinalNodeMoniker Id="b7e1a28c-26d4-40d5-a038-d3d804bad8fc" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="9d41fd52-496b-45fc-9773-fc8f9c5fc8d0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="b7e1a28c-26d4-40d5-a038-d3d804bad8fc" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="0d8fd855-cfaa-4d95-ac90-c63ca94cfc94" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="b54d6ad2-7ad1-4ecd-a3e7-a17a3b5a8989" name="ModelingProject1">
+    <elementDefinition Id="67074758-13fc-4f76-a98e-ee94e5ca22a6" />
+  </package>
+</activityRootModel>

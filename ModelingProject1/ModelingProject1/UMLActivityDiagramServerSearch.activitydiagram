@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="d8bb7ed0-deba-4137-ac3b-1271eefc2583" name="ActivityServerSearch" linkedPackageId="e1aa3263-e054-4e09-a011-d03400ad9d7c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="f8f95651-d2c4-491c-a359-0073beed08f5" name="ActivityServerSearch" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="539d729c-fccc-4330-acb9-fcbdd027f3a6" />
+        <nodes>
+          <initialNode Id="9f95f53f-b386-4a5b-bad6-779c4f2bf8fe" name="Initial1" isLeaf="false">
+            <elementDefinition Id="d9d6f357-dce3-47bf-99ec-42b1c0fde429" />
+            <flowNodeTargets>
+              <controlFlow Id="f4375233-a55c-4b49-b979-d22608a44eec" isLeaf="false">
+                <acceptEventActionMoniker Id="139bad1a-f84c-41c6-858e-2f208701537d" LastKnownName="Отримання запиту" />
+                <elementDefinition Id="940f77f6-d273-471e-9220-732ab6027ce3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="8a980450-66d0-40eb-a4ef-2fcfb99851fb" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="7e68a667-706c-44b5-99f3-068e13146ca3" />
+          </activityFinalNode>
+          <opaqueAction Id="46298704-f41f-40fa-8055-b14b7c3aa58c" name="Відображення інформації" isLeaf="false">
+            <elementDefinition Id="ef7bfdd2-c0fe-40ef-8eb9-c8bac999b4fc" />
+            <flowNodeTargets>
+              <controlFlow Id="91dbcb1f-6a7e-4fc3-a588-dff92e7e8e8a" isLeaf="false">
+                <opaqueActionMoniker Id="80933450-02c2-47c3-bdee-9db5a3cbaee2" LastKnownName="Пошук інформації" />
+                <elementDefinition Id="e4539467-ddee-4ec4-b6ff-6877dd78557f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="80933450-02c2-47c3-bdee-9db5a3cbaee2" name="Пошук інформації" isLeaf="false">
+            <elementDefinition Id="83310789-6e4e-4471-a73a-0cbf67ea9b0c" />
+            <flowNodeTargets>
+              <controlFlow Id="0b5554c1-d10e-4d61-a88c-f214de9ae4ac" isLeaf="false">
+                <opaqueActionMoniker Id="baeac20a-58fd-4bdf-81a6-d043b2e42b10" LastKnownName="Надсилання інформації" />
+                <elementDefinition Id="038e2c24-bd8b-4403-991f-5f657c58210a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="baeac20a-58fd-4bdf-81a6-d043b2e42b10" name="Надсилання інформації" isLeaf="false">
+            <elementDefinition Id="4a1d7716-f435-4d52-b2f1-96f7e739978c" />
+            <flowNodeTargets>
+              <controlFlow Id="efa58795-ff92-4999-8de4-8c24fa933f43" isLeaf="false">
+                <activityFinalNodeMoniker Id="8a980450-66d0-40eb-a4ef-2fcfb99851fb" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="21b8f4d8-861e-43a1-912b-7620a96ed7ac" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <acceptEventAction Id="139bad1a-f84c-41c6-858e-2f208701537d" name="Отримання запиту" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="2bc1c3cb-42ca-4154-b72a-46efad59823b" />
+            <flowNodeTargets>
+              <controlFlow Id="184d61d3-4bae-4426-8575-3a327e51c5fa" isLeaf="false">
+                <opaqueActionMoniker Id="46298704-f41f-40fa-8055-b14b7c3aa58c" LastKnownName="Відображення інформації" />
+                <elementDefinition Id="78a2e6b2-0a0b-459a-a3fa-edf09f6c66eb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="e1aa3263-e054-4e09-a011-d03400ad9d7c" name="ModelingProject1">
+    <elementDefinition Id="67074758-13fc-4f76-a98e-ee94e5ca22a6" />
+  </package>
+</activityRootModel>
